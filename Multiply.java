@@ -1,19 +1,22 @@
 import java.util.Scanner;
 
-public class Multiply {
+public class MultiplyNumbers {
     public static void main(String[] args) {
-        // Create a scanner object to get user input
+        // Create a Scanner object to read input
         Scanner scanner = new Scanner(System.in);
         
-        // Ask the user to enter a number
-        System.out.print("Enter a number to display its multiplication table: ");
-        int number = scanner.nextInt();
+        // Prompt the user to enter two numbers
+        System.out.print("Enter the first number: ");
+        double num1 = scanner.nextDouble();
         
-        // Print the multiplication table
-        System.out.println("Multiplication Table of " + number + ":");
-        for (int i = 1; i <= 10; i++) {
-            System.out.println(number + " x " + i + " = " + (number * i));
-        }
+        System.out.print("Enter the second number: ");
+        double num2 = scanner.nextDouble();
+        
+        // Perform multiplication
+        double result = num1 * num2;
+        
+        // Display the result
+        System.out.println("The result of multiplying " + num1 + " and " + num2 + " is: " + result);
         
         // Close the scanner
         scanner.close();
